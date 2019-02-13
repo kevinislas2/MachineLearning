@@ -6,7 +6,7 @@ function theta = gradientDescent(X, y, theta, alpha, num_iters)
 % Initialize some useful values
 m = length(y); % number of training examples
                %J_history = zeros(num_iters, 1);
-
+mseError = zeros(num_iters, 1);
 for iter = 1:num_iters
 
     % ====================== YOUR CODE HERE ======================
@@ -16,14 +16,22 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
     %
-    fprintf('Costo: %f\n', computeCost(X, y, theta));
+    if(mod(iter, 100) == 0)
+        fprintf('Costo: %f Iter: %i\n', computeCost(X, y, theta), iter);
+    end
     temp1 = 0; temp2 = 0;
+    
+    batchMSE = 0;
     for i = 1:m
         h = theta(1) + theta(2) * X(i,2);
         temp1 = temp1 + h - y(i);
         temp2 = temp2 + (h - y(i)) * X(i,2);
+
+        batchMSE = batchMSE + ((h - y(i))^2);
     end
-    
+    batchMSE = batchMSE / m;
+    mseError(iter) = batchMSE;
+
     temp1 = temp1 * alpha / m;
     temp2 = temp2 * alpha / m;
     
@@ -36,5 +44,11 @@ for iter = 1:num_iters
     % J_history(iter) = computeCost(X, y, theta);
 
 end
+
+
+figure; % open a new figure window
+plot(mseError, 'bx', 'MarkerSize', 10); % Plot the data in blue x symbols
+ylabel('MSE'); % Set the y−axis label 
+xlabel('Iter'); % Set the x−axis label
 
 end

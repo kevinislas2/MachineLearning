@@ -16,9 +16,25 @@ function plotData(x, y)
 
 figure; % open a new figure window
 
-plot(x, y, 'bx', 'MarkerSize', 10); % Plot the data 
+plot(x, y, 'bx', 'MarkerSize', 10); % Plot the data in blue x symbols
 ylabel('Profit in $10,000s'); % Set the y−axis label 
 xlabel('Population of City in 10,000s'); % Set the x−axis label
+
+figure; % open a new figure
+plot(x, y, 'ob') %Plot the data in blue circles
+ylabel('Profit in $10,000s'); % Set the y−axis label 
+xlabel('Population of City in 10,000s'); % Set the x−axis label
+
+figure; % open a new figure
+plot(x, y, '*g') %Plot the data in green asterisks
+ylabel('Profit in $10,000s'); % Set the y−axis label 
+xlabel('Population of City in 10,000s'); % Set the x−axis label
+
+figure; % open a new figure
+plot(x, y, 'dr') %Plot the data in red diamonds
+ylabel('Profit in $10,000s'); % Set the y−axis label 
+xlabel('Population of City in 10,000s'); % Set the x−axis label
+
 
 % ============================================================
 
