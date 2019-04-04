@@ -67,7 +67,7 @@ theta = gradientDescent(X, y, theta, alpha, iterations);
 
 % plot data again
 figure; % open a new figure
-plot(X, y, 'dr') %Plot the data in red diamonds
+plot(X, y, 'dr'); %Plot the data in red diamonds
 ylabel('Profit in $10,000s'); % Set the y−axis label 
 xlabel('Population of City in 10,000s'); % Set the x−axis label
 
