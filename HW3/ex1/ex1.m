@@ -37,7 +37,7 @@ pause;
 
 
 %% ======================= Part 2: Plotting =======================
-fprintf('Plotting Data ...\n')
+fprintf('Plotting Data ...\n');
 data = load('ex1data1.txt');
 X = data(:, 1); y = data(:, 2);
 m = length(y); % number of training examples
@@ -49,8 +49,8 @@ plotData(X, y);
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
-%% =================== Part 3: Gradient descent ===================
-fprintf('Running Gradient Descent ...\n')
+% %% =================== Part 3: Gradient descent ===================
+% fprintf('Running Gradient Descent ...\n')
 
 X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
 theta = zeros(2, 1); % initialize fitting parameters
@@ -64,6 +64,12 @@ computeCost(X, y, theta)
 
 % run gradient descent
 theta = gradientDescent(X, y, theta, alpha, iterations);
+
+% plot data again
+figure; % open a new figure
+plot(X, y, 'dr'); %Plot the data in red diamonds
+ylabel('Profit in $10,000s'); % Set the y−axis label 
+xlabel('Population of City in 10,000s'); % Set the x−axis label
 
 % print theta to screen
 fprintf('Theta found by gradient descent: ');

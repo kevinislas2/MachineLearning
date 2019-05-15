@@ -16,8 +16,7 @@ J = 0;
 for i = 1:m
     h = theta(1) + theta(2) * X(i,2);
     J = J + (h - y(i))^2;
-end
-%endfor  % in octave
+end  % in octave
     
 J = J / (2*m);    
 
