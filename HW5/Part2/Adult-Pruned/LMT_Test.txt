@@ -1,0 +1,2699 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.LMT -- -I -1 -M 15 -W 0.0
+Relation:     adult-weka.filters.unsupervised.attribute.Remove-R1-4,7,9-10,13-14
+Instances:    29307
+Attributes:   6
+              education-num
+              marital-status
+              relationship
+              capital-gain
+              capital-loss
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Logistic model tree 
+------------------
+
+marital-status = Married-civ-spouse
+|   capital-gain <= 5060
+|   |   capital-loss <= 1844
+|   |   |   education-num <= 11
+|   |   |   |   education-num <= 8
+|   |   |   |   |   relationship = Wife: LM_1:10/70 (119)
+|   |   |   |   |   relationship = Own-child: LM_2:10/70 (11)
+|   |   |   |   |   relationship = Husband
+|   |   |   |   |   |   capital-gain <= 2993: LM_3:10/80 (1281)
+|   |   |   |   |   |   capital-gain > 2993
+|   |   |   |   |   |   |   capital-gain <= 3103: LM_4:10/90 (5)
+|   |   |   |   |   |   |   capital-gain > 3103
+|   |   |   |   |   |   |   |   capital-gain <= 4101: LM_5:10/100 (18)
+|   |   |   |   |   |   |   |   capital-gain > 4101: LM_6:10/100 (19)
+|   |   |   |   |   relationship = Not-in-family: LM_7:0/60 (4)
+|   |   |   |   |   relationship = Other-relative: LM_8:10/70 (27)
+|   |   |   |   |   relationship = Unmarried: LM_9:0/60 (0)
+|   |   |   |   education-num > 8
+|   |   |   |   |   capital-gain <= 4416
+|   |   |   |   |   |   capital-gain <= 4101
+|   |   |   |   |   |   |   capital-gain <= 3103
+|   |   |   |   |   |   |   |   capital-gain <= 2993
+|   |   |   |   |   |   |   |   |   capital-gain <= 401
+|   |   |   |   |   |   |   |   |   |   capital-loss <= 1485: LM_10:10/120 (6353)
+|   |   |   |   |   |   |   |   |   |   capital-loss > 1485
+|   |   |   |   |   |   |   |   |   |   |   capital-loss <= 1762: LM_11:10/130 (77)
+|   |   |   |   |   |   |   |   |   |   |   capital-loss > 1762: LM_12:10/130 (5)
+|   |   |   |   |   |   |   |   |   capital-gain > 401: LM_13:10/110 (75)
+|   |   |   |   |   |   |   |   capital-gain > 2993: LM_14:10/100 (55)
+|   |   |   |   |   |   |   capital-gain > 3103: LM_15:10/90 (115)
+|   |   |   |   |   |   capital-gain > 4101: LM_16:10/80 (44)
+|   |   |   |   |   capital-gain > 4416: LM_17:10/70 (63)
+|   |   |   education-num > 11
+|   |   |   |   capital-gain <= 4416
+|   |   |   |   |   capital-loss <= 1485
+|   |   |   |   |   |   education-num <= 13: LM_18:10/80 (2294)
+|   |   |   |   |   |   education-num > 13
+|   |   |   |   |   |   |   education-num <= 14: LM_19:10/90 (690)
+|   |   |   |   |   |   |   education-num > 14: LM_20:10/90 (353)
+|   |   |   |   |   capital-loss > 1485: LM_21:10/70 (27)
+|   |   |   |   capital-gain > 4416: LM_22:10/60 (28)
+|   |   capital-loss > 1844
+|   |   |   capital-loss <= 1980: LM_23:10/50 (514)
+|   |   |   capital-loss > 1980
+|   |   |   |   capital-loss <= 2163: LM_24:10/60 (68)
+|   |   |   |   capital-loss > 2163
+|   |   |   |   |   capital-loss <= 2415
+|   |   |   |   |   |   capital-loss <= 2377
+|   |   |   |   |   |   |   capital-loss <= 2174: LM_25:10/90 (6)
+|   |   |   |   |   |   |   capital-loss > 2174
+|   |   |   |   |   |   |   |   capital-loss <= 2206: LM_26:10/100 (10)
+|   |   |   |   |   |   |   |   capital-loss > 2206: LM_27:10/100 (17)
+|   |   |   |   |   |   capital-loss > 2377: LM_28:10/80 (44)
+|   |   |   |   |   capital-loss > 2415: LM_29:10/70 (7)
+|   capital-gain > 5060
+|   |   education-num <= 11
+|   |   |   relationship = Wife: LM_30:10/50 (44)
+|   |   |   relationship = Own-child: LM_31:0/40 (3)
+|   |   |   relationship = Husband
+|   |   |   |   capital-gain <= 9562
+|   |   |   |   |   capital-gain <= 6849: LM_32:10/70 (60)
+|   |   |   |   |   capital-gain > 6849: LM_33:10/70 (202)
+|   |   |   |   capital-gain > 9562
+|   |   |   |   |   capital-gain <= 11678: LM_34:10/70 (8)
+|   |   |   |   |   capital-gain > 11678
+|   |   |   |   |   |   capital-gain <= 27828: LM_35:10/80 (73)
+|   |   |   |   |   |   capital-gain > 27828: LM_36:10/80 (26)
+|   |   |   relationship = Not-in-family: LM_37:0/40 (0)
+|   |   |   relationship = Other-relative: LM_38:0/40 (1)
+|   |   |   relationship = Unmarried: LM_39:0/40 (0)
+|   |   education-num > 11: LM_40:10/40 (624)
+marital-status = Divorced
+|   capital-gain <= 6849
+|   |   education-num <= 12
+|   |   |   capital-loss <= 1977: LM_41:10/50 (3104)
+|   |   |   capital-loss > 1977: LM_42:10/50 (25)
+|   |   education-num > 12
+|   |   |   education-num <= 15: LM_43:10/50 (725)
+|   |   |   education-num > 15: LM_44:10/50 (26)
+|   capital-gain > 6849: LM_45:10/30 (110)
+marital-status = Never-married
+|   capital-gain <= 7298
+|   |   education-num <= 12
+|   |   |   capital-loss <= 2057
+|   |   |   |   relationship = Wife: LM_46:0/50 (0)
+|   |   |   |   relationship = Own-child: LM_47:10/60 (3552)
+|   |   |   |   relationship = Husband: LM_48:0/50 (0)
+|   |   |   |   relationship = Not-in-family
+|   |   |   |   |   education-num <= 9: LM_49:10/70 (1464)
+|   |   |   |   |   education-num > 9
+|   |   |   |   |   |   capital-loss <= 1510: LM_50:10/80 (1286)
+|   |   |   |   |   |   capital-loss > 1510: LM_51:10/80 (33)
+|   |   |   |   relationship = Other-relative: LM_52:10/60 (480)
+|   |   |   |   relationship = Unmarried
+|   |   |   |   |   education-num <= 9: LM_53:10/70 (461)
+|   |   |   |   |   education-num > 9: LM_54:10/70 (237)
+|   |   |   capital-loss > 2057
+|   |   |   |   capital-loss <= 2377
+|   |   |   |   |   relationship = Wife: LM_55:0/60 (0)
+|   |   |   |   |   relationship = Own-child: LM_56:10/70 (10)
+|   |   |   |   |   relationship = Husband: LM_57:0/60 (0)
+|   |   |   |   |   relationship = Not-in-family: LM_58:10/70 (10)
+|   |   |   |   |   relationship = Other-relative: LM_59:0/60 (1)
+|   |   |   |   |   relationship = Unmarried: LM_60:0/60 (1)
+|   |   |   |   capital-loss > 2377: LM_61:10/60 (5)
+|   |   education-num > 12
+|   |   |   education-num <= 13: LM_62:10/50 (1561)
+|   |   |   education-num > 13
+|   |   |   |   education-num <= 14
+|   |   |   |   |   capital-loss <= 653: LM_63:10/70 (333)
+|   |   |   |   |   capital-loss > 653
+|   |   |   |   |   |   capital-loss <= 2339
+|   |   |   |   |   |   |   capital-loss <= 1651: LM_64:10/90 (8)
+|   |   |   |   |   |   |   capital-loss > 1651: LM_65:10/90 (9)
+|   |   |   |   |   |   capital-loss > 2339: LM_66:0/70 (2)
+|   |   |   |   education-num > 14
+|   |   |   |   |   capital-loss <= 1485
+|   |   |   |   |   |   relationship = Wife: LM_67:0/70 (0)
+|   |   |   |   |   |   relationship = Own-child: LM_68:10/80 (13)
+|   |   |   |   |   |   relationship = Husband: LM_69:0/70 (0)
+|   |   |   |   |   |   relationship = Not-in-family
+|   |   |   |   |   |   |   capital-gain <= 2885: LM_70:10/90 (97)
+|   |   |   |   |   |   |   capital-gain > 2885: LM_71:10/90 (6)
+|   |   |   |   |   |   relationship = Other-relative: LM_72:0/70 (3)
+|   |   |   |   |   |   relationship = Unmarried: LM_73:0/70 (3)
+|   |   |   |   |   capital-loss > 1485: LM_74:10/70 (12)
+|   capital-gain > 7298
+|   |   relationship = Wife: LM_75:0/30 (0)
+|   |   relationship = Own-child
+|   |   |   capital-gain <= 27828: LM_76:10/50 (15)
+|   |   |   capital-gain > 27828: LM_77:10/50 (5)
+|   |   relationship = Husband: LM_78:0/30 (0)
+|   |   relationship = Not-in-family: LM_79:10/40 (92)
+|   |   relationship = Other-relative: LM_80:0/30 (1)
+|   |   relationship = Unmarried: LM_81:0/30 (4)
+marital-status = Separated
+|   capital-gain <= 3942
+|   |   education-num <= 11
+|   |   |   relationship = Wife: LM_82:0/40 (0)
+|   |   |   relationship = Own-child: LM_83:10/50 (88)
+|   |   |   relationship = Husband: LM_84:0/40 (0)
+|   |   |   relationship = Not-in-family: LM_85:10/50 (299)
+|   |   |   relationship = Other-relative: LM_86:10/50 (43)
+|   |   |   relationship = Unmarried: LM_87:10/50 (337)
+|   |   education-num > 11
+|   |   |   relationship = Wife: LM_88:0/40 (0)
+|   |   |   relationship = Own-child: LM_89:10/50 (8)
+|   |   |   relationship = Husband: LM_90:0/40 (0)
+|   |   |   relationship = Not-in-family: LM_91:10/50 (69)
+|   |   |   relationship = Other-relative: LM_92:0/40 (1)
+|   |   |   relationship = Unmarried: LM_93:10/50 (57)
+|   capital-gain > 3942: LM_94:10/30 (28)
+marital-status = Widowed
+|   capital-gain <= 5455
+|   |   capital-loss <= 1816: LM_95:10/40 (856)
+|   |   capital-loss > 1816
+|   |   |   capital-loss <= 2206: LM_96:10/50 (9)
+|   |   |   capital-loss > 2206: LM_97:10/50 (16)
+|   capital-gain > 5455
+|   |   capital-gain <= 7978: LM_98:10/40 (7)
+|   |   capital-gain > 7978: LM_99:10/40 (18)
+marital-status = Married-spouse-absent
+|   capital-gain <= 2105: LM_100:10/30 (363)
+|   capital-gain > 2105: LM_101:10/30 (21)
+marital-status = Married-AF-spouse: LM_102:10/20 (23)
+
+Number of Leaves  : 	102
+
+Size of the Tree : 	166
+
+
+
+
+
+
+LM_1:
+Class >50K :
+-1.35 + 
+[education-num] * -0.19 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+1.35 + 
+[education-num] * 0.19 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_2:
+Class >50K :
+-7.7 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+7.7  + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+
+LM_3:
+Class >50K :
+-2.77 + 
+[education-num] * 0.08 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+2.77 + 
+[education-num] * -0.08 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+LM_4:
+Class >50K :
+59.25 + 
+[education-num] * -7.99 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+-59.25 + 
+[education-num] * 7.99 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+LM_5:
+Class >50K :
+-8.72 + 
+[education-num] * -0.06 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+8.72 + 
+[education-num] * 0.06 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_6:
+Class >50K :
+127.26 + 
+[education-num] * 0.22 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * -0.03 +
+[capital-loss] * -0
+
+Class <=50K :
+-127.26 + 
+[education-num] * -0.22 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * 0.03 +
+[capital-loss] * 0   
+
+LM_7:
+Class >50K :
+-2.7 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+2.7  + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_8:
+Class >50K :
+-7.7 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+7.7  + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_9:
+Class >50K :
+-2.7 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -1.54 +
+[relationship=Husband] * 0.17 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -1.76 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+2.7  + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 1.54 +
+[relationship=Husband] * -0.17 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 1.76 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+
+
+
+
+
+
+LM_10:
+Class >50K :
+-3.01 + 
+[education-num] * 0.16 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.06 +
+[relationship=Own-child] * -0.46 +
+[relationship=Husband] * -0.02 +
+[relationship=Not-in-family] * -6.98 +
+[relationship=Other-relative] * -0.68 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+3.01 + 
+[education-num] * -0.16 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.06 +
+[relationship=Own-child] * 0.46 +
+[relationship=Husband] * 0.02 +
+[relationship=Not-in-family] * 6.98 +
+[relationship=Other-relative] * 0.68 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+LM_11:
+Class >50K :
+-10.03 + 
+[education-num] * 0.76 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.06 +
+[relationship=Own-child] * -0.46 +
+[relationship=Husband] * 3.49 +
+[relationship=Not-in-family] * -6.98 +
+[relationship=Other-relative] * -0.69 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+10.03 + 
+[education-num] * -0.76 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.06 +
+[relationship=Own-child] * 0.46 +
+[relationship=Husband] * -3.49 +
+[relationship=Not-in-family] * 6.98 +
+[relationship=Other-relative] * 0.69 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_12:
+Class >50K :
+1082.98 + 
+[education-num] * 0.13 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.06 +
+[relationship=Own-child] * -0.46 +
+[relationship=Husband] * 1.99 +
+[relationship=Not-in-family] * -6.98 +
+[relationship=Other-relative] * -0.69 +
+[capital-gain] * -0 +
+[capital-loss] * -0.59
+
+Class <=50K :
+-1082.98 + 
+[education-num] * -0.13 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.06 +
+[relationship=Own-child] * 0.46 +
+[relationship=Husband] * -1.99 +
+[relationship=Not-in-family] * 6.98 +
+[relationship=Other-relative] * 0.69 +
+[capital-gain] * 0    +
+[capital-loss] * 0.59
+
+LM_13:
+Class >50K :
+-8.04 + 
+[education-num] * 0.16 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.06 +
+[relationship=Own-child] * -0.47 +
+[relationship=Husband] * -0.02 +
+[relationship=Not-in-family] * -5.98 +
+[relationship=Other-relative] * -0.69 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+8.04 + 
+[education-num] * -0.16 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.06 +
+[relationship=Own-child] * 0.47 +
+[relationship=Husband] * 0.02 +
+[relationship=Not-in-family] * 5.98 +
+[relationship=Other-relative] * 0.69 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_14:
+Class >50K :
+-23.71 + 
+[education-num] * 2.64 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.99 +
+[relationship=Own-child] * -0.47 +
+[relationship=Husband] * -0.02 +
+[relationship=Not-in-family] * -5.98 +
+[relationship=Other-relative] * -0.69 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+23.71 + 
+[education-num] * -2.64 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.99 +
+[relationship=Own-child] * 0.47 +
+[relationship=Husband] * 0.02 +
+[relationship=Not-in-family] * 5.98 +
+[relationship=Other-relative] * 0.69 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_15:
+Class >50K :
+-7.72 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.06 +
+[relationship=Own-child] * -0.46 +
+[relationship=Husband] * -0.01 +
+[relationship=Not-in-family] * -4.98 +
+[relationship=Other-relative] * -0.7 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+7.72 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.06 +
+[relationship=Own-child] * 0.46 +
+[relationship=Husband] * 0.01 +
+[relationship=Not-in-family] * 4.98 +
+[relationship=Other-relative] * 0.7  +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_16:
+Class >50K :
+2.61 + 
+[education-num] * -0.32 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 3.63 +
+[relationship=Own-child] * -0.47 +
+[relationship=Husband] * -0.01 +
+[relationship=Not-in-family] * -4.48 +
+[relationship=Other-relative] * -0.7 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-2.61 + 
+[education-num] * 0.32 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -3.63 +
+[relationship=Own-child] * 0.47 +
+[relationship=Husband] * 0.01 +
+[relationship=Not-in-family] * 4.48 +
+[relationship=Other-relative] * 0.7  +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_17:
+Class >50K :
+-7.56 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.04 +
+[relationship=Own-child] * -0.47 +
+[relationship=Husband] * -0.01 +
+[relationship=Not-in-family] * -2.98 +
+[relationship=Other-relative] * -0.7 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+7.56 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.04 +
+[relationship=Own-child] * 0.47 +
+[relationship=Husband] * 0.01 +
+[relationship=Not-in-family] * 2.98 +
+[relationship=Other-relative] * 0.7  +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+
+
+LM_18:
+Class >50K :
+-3.46 + 
+[education-num] * 0.19 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.1  +
+[relationship=Own-child] * -6.89 +
+[relationship=Husband] * -0 +
+[relationship=Not-in-family] * -0.47 +
+[relationship=Other-relative] * -0.4 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.46 + 
+[education-num] * -0.19 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.1 +
+[relationship=Own-child] * 6.89 +
+[relationship=Husband] * 0    +
+[relationship=Not-in-family] * 0.47 +
+[relationship=Other-relative] * 0.4  +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_19:
+Class >50K :
+-2.34 + 
+[education-num] * 0.12 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.11 +
+[relationship=Own-child] * -6.39 +
+[relationship=Husband] * -0.05 +
+[relationship=Not-in-family] * 3.68 +
+[relationship=Other-relative] * -0.44 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+2.34 + 
+[education-num] * -0.12 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.11 +
+[relationship=Own-child] * 6.39 +
+[relationship=Husband] * 0.05 +
+[relationship=Not-in-family] * -3.68 +
+[relationship=Other-relative] * 0.44 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_20:
+Class >50K :
+-2.36 + 
+[education-num] * 0.12 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.11 +
+[relationship=Own-child] * -6.39 +
+[relationship=Husband] * 0.02 +
+[relationship=Not-in-family] * -2.58 +
+[relationship=Other-relative] * -0.44 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+2.36 + 
+[education-num] * -0.12 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.11 +
+[relationship=Own-child] * 6.39 +
+[relationship=Husband] * -0.02 +
+[relationship=Not-in-family] * 2.58 +
+[relationship=Other-relative] * 0.44 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_21:
+Class >50K :
+-185.28 + 
+[education-num] * 0.17 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.12 +
+[relationship=Own-child] * -4.89 +
+[relationship=Husband] * -0 +
+[relationship=Not-in-family] * -0.47 +
+[relationship=Other-relative] * -0.39 +
+[capital-gain] * -0 +
+[capital-loss] * 0.1 
+
+Class <=50K :
+185.28 + 
+[education-num] * -0.17 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.12 +
+[relationship=Own-child] * 4.89 +
+[relationship=Husband] * 0    +
+[relationship=Not-in-family] * 0.47 +
+[relationship=Other-relative] * 0.39 +
+[capital-gain] * 0    +
+[capital-loss] * -0.1
+
+LM_22:
+Class >50K :
+-6.87 + 
+[education-num] * 0.05 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.12 +
+[relationship=Own-child] * -2.88 +
+[relationship=Husband] * -0 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * -0.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+6.87 + 
+[education-num] * -0.05 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.12 +
+[relationship=Own-child] * 2.88 +
+[relationship=Husband] * 0    +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * 0.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+LM_23:
+Class >50K :
+-5.17 + 
+[education-num] * 0.21 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * 0.6  +
+[relationship=Not-in-family] * 0.18 +
+[relationship=Other-relative] * -3.65 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+5.17 + 
+[education-num] * -0.21 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * -0.6 +
+[relationship=Not-in-family] * -0.18 +
+[relationship=Other-relative] * 3.65 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+LM_24:
+Class >50K :
+-18.89 + 
+[education-num] * 0.2  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -0.22 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 1.09 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+18.89 + 
+[education-num] * -0.2 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 0.22 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -1.09 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+
+
+LM_25:
+Class >50K :
+9.65 + 
+[education-num] * 0.05 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.44 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -0.98 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 4.14 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+-9.65 + 
+[education-num] * -0.05 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.44 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 0.98 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -4.14 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+LM_26:
+Class >50K :
+-13.11 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.57 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -0.98 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 4.64 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+13.11 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.57 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 0.98 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -4.64 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_27:
+Class >50K :
+33.11 + 
+[education-num] * 0.19 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.57 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -1.25 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 4.64 +
+[capital-gain] * -0 +
+[capital-loss] * -0.01
+
+Class <=50K :
+-33.11 + 
+[education-num] * -0.19 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.57 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 1.25 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -4.64 +
+[capital-gain] * 0    +
+[capital-loss] * 0.01
+
+LM_28:
+Class >50K :
+-4.87 + 
+[education-num] * 0.19 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * -0.44 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -0.42 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 3.64 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.87 + 
+[education-num] * -0.19 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * 0.44 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 0.42 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -3.64 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_29:
+Class >50K :
+-7.07 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.18 +
+[relationship=Husband] * -0.42 +
+[relationship=Not-in-family] * -0.34 +
+[relationship=Other-relative] * 3.14 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+7.07 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.18 +
+[relationship=Husband] * 0.42 +
+[relationship=Not-in-family] * 0.34 +
+[relationship=Other-relative] * -3.14 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+
+LM_30:
+Class >50K :
+-0.66 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+0.66 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_31:
+Class >50K :
+1.05 + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-1.05 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+LM_32:
+Class >50K :
+217.43 + 
+[education-num] * -0.47 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * -0.03 +
+[capital-loss] * 0   
+
+Class <=50K :
+-217.43 + 
+[education-num] * 0.47 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * 0.03 +
+[capital-loss] * -0
+
+LM_33:
+Class >50K :
+9.11 + 
+[education-num] * -0.46 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-9.11 + 
+[education-num] * 0.46 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_34:
+Class >50K :
+-3105.63 + 
+[education-num] * 0.06 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0.29 +
+[capital-loss] * 0   
+
+Class <=50K :
+3105.63 + 
+[education-num] * -0.06 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0.29 +
+[capital-loss] * -0
+
+
+LM_35:
+Class >50K :
+4.46 + 
+[education-num] * 0.15 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-loss] * 0   
+
+Class <=50K :
+-4.46 + 
+[education-num] * -0.15 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-loss] * -0
+
+LM_36:
+Class >50K :
+-16.3 + 
+[education-num] * 0.15 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+16.3 + 
+[education-num] * -0.15 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_37:
+Class >50K :
+1.05 + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-1.05 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_38:
+Class >50K :
+1.05 + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-1.05 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_39:
+Class >50K :
+1.05 + 
+[education-num] * -0.07 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 1.06 +
+[relationship=Husband] * 0.3  +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -4.38 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-1.05 + 
+[education-num] * 0.07 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -1.06 +
+[relationship=Husband] * -0.3 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 4.38 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_40:
+Class >50K :
+-2.02 + 
+[education-num] * 0.47 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Wife] * 0.01 +
+[relationship=Own-child] * 0.55 +
+[relationship=Husband] * -2.36 +
+[relationship=Not-in-family] * -0.36 +
+[relationship=Other-relative] * -1.04 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+2.02 + 
+[education-num] * -0.47 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Wife] * -0.01 +
+[relationship=Own-child] * -0.55 +
+[relationship=Husband] * 2.36 +
+[relationship=Not-in-family] * 0.36 +
+[relationship=Other-relative] * 1.04 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+
+LM_41:
+Class >50K :
+-2.92 + 
+[education-num] * 0.13 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.26 +
+[relationship=Not-in-family] * 0.14 +
+[relationship=Other-relative] * -0.08 +
+[relationship=Unmarried] * -0.16 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+2.92 + 
+[education-num] * -0.13 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.26 +
+[relationship=Not-in-family] * -0.14 +
+[relationship=Other-relative] * 0.08 +
+[relationship=Unmarried] * 0.16 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_42:
+Class >50K :
+-3.8 + 
+[education-num] * 0.24 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.26 +
+[relationship=Not-in-family] * -0.15 +
+[relationship=Other-relative] * -0.09 +
+[relationship=Unmarried] * 1.21 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+2.52 + 
+[education-num] * -0.24 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.26 +
+[relationship=Not-in-family] * 1.43 +
+[relationship=Other-relative] * 0.09 +
+[relationship=Unmarried] * 0.07 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_43:
+Class >50K :
+-3.07 + 
+[education-num] * 0.17 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.9 +
+[relationship=Not-in-family] * 0.15 +
+[relationship=Other-relative] * -0.46 +
+[relationship=Unmarried] * 0.02 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+3.07 + 
+[education-num] * -0.17 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.9  +
+[relationship=Not-in-family] * -0.15 +
+[relationship=Other-relative] * 0.46 +
+[relationship=Unmarried] * -0.02 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_44:
+Class >50K :
+-3.78 + 
+[education-num] * 0.24 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * 2.41 +
+[relationship=Not-in-family] * -0.12 +
+[relationship=Other-relative] * -0.45 +
+[relationship=Unmarried] * 0.02 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.78 + 
+[education-num] * -0.24 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * -2.41 +
+[relationship=Not-in-family] * 0.12 +
+[relationship=Other-relative] * 0.45 +
+[relationship=Unmarried] * -0.02 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_45:
+Class >50K :
+-5.44 + 
+[education-num] * 0.1  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.41 +
+[relationship=Not-in-family] * 0.15 +
+[relationship=Other-relative] * -0.12 +
+[relationship=Unmarried] * -1.75 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+5.44 + 
+[education-num] * -0.1 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.41 +
+[relationship=Not-in-family] * -0.15 +
+[relationship=Other-relative] * 0.12 +
+[relationship=Unmarried] * 1.75 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+
+
+LM_46:
+Class >50K :
+-3.26 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.26 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_47:
+Class >50K :
+-2.56 + 
+[education-num] * 0.04 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+2.56 + 
+[education-num] * -0.04 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_48:
+Class >50K :
+-3.26 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.26 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_49:
+Class >50K :
+-2.78 + 
+[education-num] * 0.04 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+2.78 + 
+[education-num] * -0.04 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+
+LM_50:
+Class >50K :
+-2.64 + 
+[education-num] * 0.05 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+2.64 + 
+[education-num] * -0.05 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_51:
+Class >50K :
+414.66 + 
+[education-num] * 0.06 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * -0.26
+
+Class <=50K :
+-414.66 + 
+[education-num] * -0.06 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * 0.26
+
+LM_52:
+Class >50K :
+-8.26 + 
+[education-num] * 0.11 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+8.26 + 
+[education-num] * -0.11 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_53:
+Class >50K :
+-2.08 + 
+[education-num] * -0.08 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+2.08 + 
+[education-num] * 0.08 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_54:
+Class >50K :
+-1.07 + 
+[education-num] * -0.1 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * 0.39 +
+[relationship=Other-relative] * -4.14 +
+[relationship=Unmarried] * 0.03 +
+[capital-gain] * 0    +
+[capital-loss] * -0.01
+
+Class <=50K :
+1.07 + 
+[education-num] * 0.1  +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * -0.39 +
+[relationship=Other-relative] * 4.14 +
+[relationship=Unmarried] * -0.03 +
+[capital-gain] * -0 +
+[capital-loss] * 0.01
+
+
+
+LM_55:
+Class >50K :
+-1.92 + 
+[education-num] * 0.21 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+1.92 + 
+[education-num] * -0.21 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_56:
+Class >50K :
+18.24 + 
+[education-num] * -3.25 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+-18.24 + 
+[education-num] * 3.25 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_57:
+Class >50K :
+-1.92 + 
+[education-num] * 0.21 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+1.92 + 
+[education-num] * -0.21 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_58:
+Class >50K :
+-104.98 + 
+[education-num] * 4.58 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * 0.03
+
+Class <=50K :
+104.98 + 
+[education-num] * -4.58 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * -0.03
+
+LM_59:
+Class >50K :
+-1.92 + 
+[education-num] * 0.21 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+1.92 + 
+[education-num] * -0.21 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_60:
+Class >50K :
+-1.92 + 
+[education-num] * 0.21 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.45 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -2.39 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+1.92 + 
+[education-num] * -0.21 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.45 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 2.39 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_61:
+Class >50K :
+41.38 + 
+[education-num] * 0.04 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.49 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.64 +
+[relationship=Unmarried] * -0.34 +
+[capital-gain] * 0    +
+[capital-loss] * -0.01
+
+Class <=50K :
+-41.38 + 
+[education-num] * -0.04 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.49 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.64 +
+[relationship=Unmarried] * 0.34 +
+[capital-gain] * -0 +
+[capital-loss] * 0.01
+
+
+LM_62:
+Class >50K :
+-6.5 + 
+[education-num] * 0.39 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.56 +
+[relationship=Not-in-family] * 0.21 +
+[relationship=Other-relative] * -0.11 +
+[relationship=Unmarried] * 0.13 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+6.5  + 
+[education-num] * -0.39 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.56 +
+[relationship=Not-in-family] * -0.21 +
+[relationship=Other-relative] * 0.11 +
+[relationship=Unmarried] * -0.13 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+
+LM_63:
+Class >50K :
+-5.7 + 
+[education-num] * 0.34 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.28 +
+[relationship=Not-in-family] * 0.2  +
+[relationship=Other-relative] * -4.9 +
+[relationship=Unmarried] * -0.41 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+5.7  + 
+[education-num] * -0.34 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.28 +
+[relationship=Not-in-family] * -0.2 +
+[relationship=Other-relative] * 4.9  +
+[relationship=Unmarried] * 0.41 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+LM_64:
+Class >50K :
+-111.71 + 
+[education-num] * 0.34 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * 0.64 +
+[relationship=Not-in-family] * 0.2  +
+[relationship=Other-relative] * -2.9 +
+[relationship=Unmarried] * -0.43 +
+[capital-gain] * 0    +
+[capital-loss] * 0.07
+
+Class <=50K :
+111.71 + 
+[education-num] * -0.34 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * -0.64 +
+[relationship=Not-in-family] * -0.2 +
+[relationship=Other-relative] * 2.9  +
+[relationship=Unmarried] * 0.43 +
+[capital-gain] * -0 +
+[capital-loss] * -0.07
+
+LM_65:
+Class >50K :
+-6.09 + 
+[education-num] * 0.34 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * 0.38 +
+[relationship=Not-in-family] * 0.26 +
+[relationship=Other-relative] * -2.9 +
+[relationship=Unmarried] * -0.43 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+6.03 + 
+[education-num] * -0.34 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * -0.32 +
+[relationship=Not-in-family] * -0.2 +
+[relationship=Other-relative] * 2.9  +
+[relationship=Unmarried] * 0.43 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_66:
+Class >50K :
+-5.59 + 
+[education-num] * 0.34 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * 0.54 +
+[relationship=Not-in-family] * 0.2  +
+[relationship=Other-relative] * -2.9 +
+[relationship=Unmarried] * -0.43 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+5.59 + 
+[education-num] * -0.34 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * -0.54 +
+[relationship=Not-in-family] * -0.2 +
+[relationship=Other-relative] * 2.9  +
+[relationship=Unmarried] * 0.43 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+LM_67:
+Class >50K :
+0.79 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-0.79 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_68:
+Class >50K :
+84.94 + 
+[education-num] * -5.67 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-84.94 + 
+[education-num] * 5.67 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_69:
+Class >50K :
+0.79 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-0.79 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+
+LM_70:
+Class >50K :
+-0.58 + 
+[education-num] * 0    +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+0.58 + 
+[education-num] * -0 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_71:
+Class >50K :
+-31.86 + 
+[education-num] * -0 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+Class <=50K :
+31.86 + 
+[education-num] * 0    +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+LM_72:
+Class >50K :
+0.79 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-0.79 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_73:
+Class >50K :
+0.79 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.25 +
+[relationship=Not-in-family] * 0.37 +
+[relationship=Other-relative] * -2.6 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+Class <=50K :
+-0.79 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.25 +
+[relationship=Not-in-family] * -0.37 +
+[relationship=Other-relative] * 2.6  +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+LM_74:
+Class >50K :
+-44.48 + 
+[education-num] * 3    +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * 1.23 +
+[relationship=Not-in-family] * 0.28 +
+[relationship=Other-relative] * -1.96 +
+[relationship=Unmarried] * -2.92 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+44.48 + 
+[education-num] * -3 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * -1.23 +
+[relationship=Not-in-family] * -0.28 +
+[relationship=Other-relative] * 1.96 +
+[relationship=Unmarried] * 2.92 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_75:
+Class >50K :
+-2.88 + 
+[education-num] * 0.48 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+2.88 + 
+[education-num] * -0.48 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+LM_76:
+Class >50K :
+4.03 + 
+[education-num] * 0.29 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+-4.03 + 
+[education-num] * -0.29 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_77:
+Class >50K :
+-14.5 + 
+[education-num] * 0.45 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+14.5 + 
+[education-num] * -0.45 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_78:
+Class >50K :
+-2.88 + 
+[education-num] * 0.48 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+2.88 + 
+[education-num] * -0.48 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_79:
+Class >50K :
+2.12 + 
+[education-num] * 0.48 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+-2.12 + 
+[education-num] * -0.48 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_80:
+Class >50K :
+-2.88 + 
+[education-num] * 0.48 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+2.88 + 
+[education-num] * -0.48 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_81:
+Class >50K :
+-2.88 + 
+[education-num] * 0.48 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.46 +
+[relationship=Not-in-family] * 1.4  +
+[relationship=Other-relative] * -1.28 +
+[relationship=Unmarried] * 1.14 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+2.88 + 
+[education-num] * -0.48 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.46 +
+[relationship=Not-in-family] * -1.4 +
+[relationship=Other-relative] * 1.28 +
+[relationship=Unmarried] * -1.14 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+
+
+LM_82:
+Class >50K :
+-4.92 + 
+[education-num] * 0.3  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.92 + 
+[education-num] * -0.3 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_83:
+Class >50K :
+-9.92 + 
+[education-num] * 0.3  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+9.92 + 
+[education-num] * -0.3 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_84:
+Class >50K :
+-4.92 + 
+[education-num] * 0.3  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.92 + 
+[education-num] * -0.3 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_85:
+Class >50K :
+-4.83 + 
+[education-num] * 0.29 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.83 + 
+[education-num] * -0.29 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_86:
+Class >50K :
+-9.92 + 
+[education-num] * 0.3  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+9.92 + 
+[education-num] * -0.3 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_87:
+Class >50K :
+-4.99 + 
+[education-num] * 0.32 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -3.02 +
+[relationship=Not-in-family] * 0.54 +
+[relationship=Other-relative] * -2.54 +
+[capital-gain] * -0.02 +
+[capital-loss] * -0
+
+Class <=50K :
+4.99 + 
+[education-num] * -0.32 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 3.02 +
+[relationship=Not-in-family] * -0.54 +
+[relationship=Other-relative] * 2.54 +
+[capital-gain] * 0.02 +
+[capital-loss] * 0   
+
+
+LM_88:
+Class >50K :
+-4.67 + 
+[education-num] * 0.27 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.67 + 
+[education-num] * -0.27 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_89:
+Class >50K :
+-9.67 + 
+[education-num] * 0.27 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+9.67 + 
+[education-num] * -0.27 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_90:
+Class >50K :
+-4.67 + 
+[education-num] * 0.27 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.67 + 
+[education-num] * -0.27 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_91:
+Class >50K :
+-8.7 + 
+[education-num] * 0.58 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+8.7  + 
+[education-num] * -0.58 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_92:
+Class >50K :
+-4.67 + 
+[education-num] * 0.27 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+4.67 + 
+[education-num] * -0.27 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_93:
+Class >50K :
+0.46 + 
+[education-num] * -0.12 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -4.03 +
+[relationship=Not-in-family] * 0.52 +
+[relationship=Other-relative] * -2.54 +
+[relationship=Unmarried] * 0.06 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+-0.46 + 
+[education-num] * 0.12 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 4.03 +
+[relationship=Not-in-family] * -0.52 +
+[relationship=Other-relative] * 2.54 +
+[relationship=Unmarried] * -0.06 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_94:
+Class >50K :
+-3.87 + 
+[education-num] * 0.13 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -2.02 +
+[relationship=Not-in-family] * 0.78 +
+[relationship=Other-relative] * -2.04 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.87 + 
+[education-num] * -0.13 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 2.02 +
+[relationship=Not-in-family] * -0.78 +
+[relationship=Other-relative] * 2.04 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+
+LM_95:
+Class >50K :
+-3.58 + 
+[education-num] * 0.2  +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.06 +
+[relationship=Not-in-family] * 0.25 +
+[relationship=Other-relative] * -3.07 +
+[relationship=Unmarried] * -0.26 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+3.58 + 
+[education-num] * -0.2 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.06 +
+[relationship=Not-in-family] * -0.25 +
+[relationship=Other-relative] * 3.07 +
+[relationship=Unmarried] * 0.26 +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+
+LM_96:
+Class >50K :
+-5.51 + 
+[education-num] * 0.15 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -2.62 +
+[relationship=Not-in-family] * 0.25 +
+[relationship=Other-relative] * -2.07 +
+[relationship=Unmarried] * 0.87 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+5.51 + 
+[education-num] * -0.15 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 2.62 +
+[relationship=Not-in-family] * -0.25 +
+[relationship=Other-relative] * 2.07 +
+[relationship=Unmarried] * -0.87 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+LM_97:
+Class >50K :
+1.12 + 
+[education-num] * 0.14 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -2.62 +
+[relationship=Not-in-family] * 0.49 +
+[relationship=Other-relative] * -2.07 +
+[relationship=Unmarried] * 0.87 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Class <=50K :
+-1.12 + 
+[education-num] * -0.14 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 2.62 +
+[relationship=Not-in-family] * -0.49 +
+[relationship=Other-relative] * 2.07 +
+[relationship=Unmarried] * -0.87 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+
+LM_98:
+Class >50K :
+68.63 + 
+[education-num] * 0.37 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.24 +
+[relationship=Not-in-family] * -4.26 +
+[relationship=Other-relative] * -2.07 +
+[relationship=Unmarried] * 0.74 +
+[capital-gain] * -0.01 +
+[capital-loss] * 0   
+
+Class <=50K :
+-67.69 + 
+[education-num] * -0.37 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.24 +
+[relationship=Not-in-family] * 3.32 +
+[relationship=Other-relative] * 2.07 +
+[relationship=Unmarried] * -1.69 +
+[capital-gain] * 0.01 +
+[capital-loss] * -0
+
+LM_99:
+Class >50K :
+-2.45 + 
+[education-num] * 0.37 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.24 +
+[relationship=Not-in-family] * -2.22 +
+[relationship=Other-relative] * -2.07 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+3.48 + 
+[education-num] * -0.37 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.24 +
+[relationship=Not-in-family] * 1.19 +
+[relationship=Other-relative] * 2.07 +
+[relationship=Unmarried] * -1.02 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+
+LM_100:
+Class >50K :
+-2.14 + 
+[education-num] * 0.09 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Not-in-family] * 0.05 +
+[relationship=Other-relative] * -3.22 +
+[relationship=Unmarried] * -0.5 +
+[capital-gain] * -0 +
+[capital-loss] * 0   
+
+Class <=50K :
+2.14 + 
+[education-num] * -0.09 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Not-in-family] * -0.05 +
+[relationship=Other-relative] * 3.22 +
+[relationship=Unmarried] * 0.5  +
+[capital-gain] * 0    +
+[capital-loss] * -0
+
+LM_101:
+Class >50K :
+-0.78 + 
+[education-num] * -0.38 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -0.2 +
+[relationship=Other-relative] * -1.71 +
+[relationship=Unmarried] * 3.31 +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+0.78 + 
+[education-num] * 0.38 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 0.2  +
+[relationship=Other-relative] * 1.71 +
+[relationship=Unmarried] * -3.31 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+LM_102:
+Class >50K :
+-4.36 + 
+[education-num] * 0.34 +
+[marital-status=Married-civ-spouse] * 1.14 +
+[relationship=Own-child] * -1.99 +
+[relationship=Husband] * 0.2  +
+[capital-gain] * 0    +
+[capital-loss] * 0   
+
+Class <=50K :
+4.36 + 
+[education-num] * -0.34 +
+[marital-status=Married-civ-spouse] * -1.14 +
+[relationship=Own-child] * 1.99 +
+[relationship=Husband] * -0.2 +
+[capital-gain] * -0 +
+[capital-loss] * -0
+
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(numeric) education-num   	--> 5 (numeric) education-num
+(nominal) marital-status  	--> 6 (nominal) marital-status
+(nominal) relationship    	--> 8 (nominal) relationship
+(numeric) capital-gain    	--> 11 (numeric) capital-gain
+(numeric) capital-loss    	--> 12 (numeric) capital-loss
+(nominal) class           	--> 15 (nominal) class
+
+
+Time taken to build model: 14.36 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 44.82 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       16755               85.7691 %
+Incorrectly Classified Instances      2780               14.2309 %
+Kappa statistic                          0.5744
+Mean absolute error                      0.1989
+Root mean squared error                  0.3172
+Relative absolute error                 54.5531 %
+Root relative squared error             74.0596 %
+Total Number of Instances            19535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.576    0.052    0.778      0.576    0.662      0.585    0.901     0.765     >50K
+                 0.948    0.424    0.875      0.948    0.910      0.585    0.901     0.959     <=50K
+Weighted Avg.    0.858    0.334    0.852      0.858    0.850      0.585    0.901     0.912     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2723  2004 |     a = >50K
+   776 14032 |     b = <=50K
+

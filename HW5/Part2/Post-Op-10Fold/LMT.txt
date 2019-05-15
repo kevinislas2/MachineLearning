@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     postoperative-patient-data
+Instances:    90
+Attributes:   9
+              L-CORE
+              L-SURF
+              L-O2
+              L-BP
+              SURF-STBL
+              CORE-STBL
+              BP-STBL
+              COMFORT
+              decision
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:0/0 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class A :
+0    + 
+
+Class I :
+0    + 
+
+Class S :
+0    + 
+
+
+Time taken to build model: 0.43 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          64               71.1111 %
+Incorrectly Classified Instances        26               28.8889 %
+Kappa statistic                          0     
+Mean absolute error                      0.4444
+Root mean squared error                  0.4714
+Relative absolute error                154.2228 %
+Root relative squared error            125.2727 %
+Total Number of Instances               90     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.711      1.000    0.831      ?        0.500     0.711     A
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.022     I
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.267     S
+Weighted Avg.    0.711    0.711    ?          0.711    ?          ?        0.500     0.577     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 64  0  0 |  a = A
+  2  0  0 |  b = I
+ 24  0  0 |  c = S
+

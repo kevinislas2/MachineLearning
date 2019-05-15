@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     cmc
+Instances:    884
+Attributes:   10
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Wifes_now_working?
+              Husbands_occupation
+              Standard-of-living_index
+              Media_exposure
+              Contraceptive_method_used
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:4/4 (884)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 1 :
+1.14 + 
+[Wifes_education=1] * 0.65 +
+[Wifes_education=3] * -0.29 +
+[Wifes_education=4] * -0.71 +
+[Number_of_children_ever_born] * -0.13
+
+Class 2 :
+-1.05 + 
+[Wifes_education=1] * -0.69 +
+[Wifes_education=4] * 0.79 +
+[Number_of_children_ever_born] * 0.1  +
+[Standard-of-living_index=4] * 0.28
+
+Class 3 :
+0.91 + 
+[Wifes_age] * -0.05 +
+[Wifes_religion=1] * 0.55 +
+[Wifes_now_working?=1] * 0.34
+
+
+Time taken to build model: 0.35 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         486               54.9774 %
+Incorrectly Classified Instances       398               45.0226 %
+Kappa statistic                          0.2556
+Mean absolute error                      0.3783
+Root mean squared error                  0.4311
+Relative absolute error                 88.8324 %
+Root relative squared error             93.4186 %
+Total Number of Instances              884     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.795    0.505    0.582      0.795    0.672      0.302    0.725     0.707     1
+                 0.511    0.151    0.540      0.511    0.525      0.367    0.760     0.504     2
+                 0.165    0.097    0.392      0.165    0.233      0.096    0.674     0.398     3
+Weighted Avg.    0.550    0.302    0.519      0.550    0.514      0.262    0.720     0.570     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 330  48  37 |   a = 1
+  86 116  25 |   b = 2
+ 151  51  40 |   c = 3
+

@@ -1,0 +1,154 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     adult-weka.filters.unsupervised.attribute.Remove-R1-4,7,9-10,13-14
+Instances:    29307
+Attributes:   6
+              education-num
+              marital-status
+              relationship
+              capital-gain
+              capital-loss
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+marital-status = Married-civ-spouse
+|   capital-gain <= 5060
+|   |   capital-loss <= 1844
+|   |   |   education-num <= 11
+|   |   |   |   capital-gain <= 4416
+|   |   |   |   |   capital-gain <= 4101
+|   |   |   |   |   |   capital-gain <= 3103
+|   |   |   |   |   |   |   capital-gain <= 2993: <=50K (7945.0/2189.0)
+|   |   |   |   |   |   |   capital-gain > 2993: >50K (60.0/2.0)
+|   |   |   |   |   |   capital-gain > 3103: <=50K (137.0)
+|   |   |   |   |   capital-gain > 4101: >50K (54.0/9.0)
+|   |   |   |   capital-gain > 4416: <=50K (75.0)
+|   |   |   education-num > 11
+|   |   |   |   capital-gain <= 4416
+|   |   |   |   |   capital-loss <= 1485
+|   |   |   |   |   |   relationship = Wife: >50K (383.0/133.0)
+|   |   |   |   |   |   relationship = Own-child: <=50K (7.0)
+|   |   |   |   |   |   relationship = Husband
+|   |   |   |   |   |   |   education-num <= 12: <=50K (292.0/139.0)
+|   |   |   |   |   |   |   education-num > 12: >50K (2630.0/962.0)
+|   |   |   |   |   |   relationship = Not-in-family: <=50K (5.0/2.0)
+|   |   |   |   |   |   relationship = Other-relative: <=50K (20.0/8.0)
+|   |   |   |   |   |   relationship = Unmarried: >50K (0.0)
+|   |   |   |   |   capital-loss > 1485: <=50K (27.0/1.0)
+|   |   |   |   capital-gain > 4416: <=50K (28.0)
+|   |   capital-loss > 1844
+|   |   |   capital-loss <= 1980: >50K (514.0/9.0)
+|   |   |   capital-loss > 1980
+|   |   |   |   capital-loss <= 2163: <=50K (68.0)
+|   |   |   |   capital-loss > 2163
+|   |   |   |   |   capital-loss <= 2415
+|   |   |   |   |   |   capital-loss <= 2377
+|   |   |   |   |   |   |   capital-loss <= 2174: >50K (6.0)
+|   |   |   |   |   |   |   capital-loss > 2174
+|   |   |   |   |   |   |   |   capital-loss <= 2206: <=50K (10.0)
+|   |   |   |   |   |   |   |   capital-loss > 2206
+|   |   |   |   |   |   |   |   |   capital-loss <= 2282: >50K (4.0)
+|   |   |   |   |   |   |   |   |   capital-loss > 2282
+|   |   |   |   |   |   |   |   |   |   education-num <= 14: <=50K (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   education-num > 14: >50K (2.0)
+|   |   |   |   |   |   capital-loss > 2377: >50K (44.0)
+|   |   |   |   |   capital-loss > 2415: <=50K (7.0)
+|   capital-gain > 5060
+|   |   education-num <= 11
+|   |   |   capital-gain <= 9562
+|   |   |   |   capital-gain <= 6849
+|   |   |   |   |   capital-gain <= 6612: >50K (63.0)
+|   |   |   |   |   capital-gain > 6612: <=50K (3.0)
+|   |   |   |   capital-gain > 6849: >50K (227.0)
+|   |   |   capital-gain > 9562
+|   |   |   |   capital-gain <= 11678
+|   |   |   |   |   capital-gain <= 10566: <=50K (6.0)
+|   |   |   |   |   capital-gain > 10566: >50K (3.0)
+|   |   |   |   capital-gain > 11678: >50K (115.0/3.0)
+|   |   education-num > 11: >50K (624.0/1.0)
+marital-status = Divorced
+|   capital-gain <= 6849: <=50K (3880.0/285.0)
+|   capital-gain > 6849: >50K (110.0/1.0)
+marital-status = Never-married
+|   capital-gain <= 7298
+|   |   education-num <= 12
+|   |   |   capital-loss <= 2057: <=50K (7513.0/91.0)
+|   |   |   capital-loss > 2057
+|   |   |   |   capital-loss <= 2377: <=50K (22.0/3.0)
+|   |   |   |   capital-loss > 2377: >50K (5.0/1.0)
+|   |   education-num > 12
+|   |   |   capital-loss <= 1510: <=50K (1948.0/193.0)
+|   |   |   capital-loss > 1510
+|   |   |   |   capital-loss <= 1573: >50K (19.0)
+|   |   |   |   capital-loss > 1573
+|   |   |   |   |   capital-loss <= 2231: <=50K (58.0/1.0)
+|   |   |   |   |   capital-loss > 2231
+|   |   |   |   |   |   capital-loss <= 2377: <=50K (13.0/2.0)
+|   |   |   |   |   |   capital-loss > 2377: >50K (9.0)
+|   capital-gain > 7298: >50K (117.0/4.0)
+marital-status = Separated
+|   capital-gain <= 3942: <=50K (902.0/45.0)
+|   capital-gain > 3942
+|   |   capital-gain <= 7978: <=50K (16.0/4.0)
+|   |   capital-gain > 7978: >50K (12.0)
+marital-status = Widowed
+|   capital-gain <= 5455
+|   |   capital-loss <= 1816: <=50K (856.0/42.0)
+|   |   capital-loss > 1816
+|   |   |   capital-loss <= 2206: <=50K (9.0)
+|   |   |   capital-loss > 2206
+|   |   |   |   capital-loss <= 3004: >50K (14.0/2.0)
+|   |   |   |   capital-loss > 3004: <=50K (2.0)
+|   capital-gain > 5455
+|   |   capital-gain <= 7978: <=50K (7.0/1.0)
+|   |   capital-gain > 7978: >50K (18.0)
+marital-status = Married-spouse-absent
+|   capital-gain <= 2105: <=50K (363.0/25.0)
+|   capital-gain > 2105
+|   |   capital-gain <= 4787: <=50K (6.0)
+|   |   capital-gain > 4787: >50K (15.0/1.0)
+marital-status = Married-AF-spouse
+|   education-num <= 12: <=50K (18.0/2.0)
+|   education-num > 12: >50K (5.0/1.0)
+
+Number of Leaves  : 	55
+
+Size of the tree : 	100
+
+
+Time taken to build model: 0.25 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       25142               85.7884 %
+Incorrectly Classified Instances      4165               14.2116 %
+Kappa statistic                          0.5667
+Mean absolute error                      0.2075
+Root mean squared error                  0.3221
+Relative absolute error                 57.2956 %
+Root relative squared error             75.6948 %
+Total Number of Instances            29307     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.564    0.051    0.777      0.564    0.653      0.578    0.882     0.706     >50K
+                 0.949    0.436    0.875      0.949    0.911      0.578    0.882     0.944     <=50K
+Weighted Avg.    0.858    0.345    0.851      0.858    0.850      0.578    0.882     0.888     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3924  3036 |     a = >50K
+  1129 21218 |     b = <=50K
+

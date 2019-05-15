@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     cmc
+Instances:    884
+Attributes:   10
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Wifes_now_working?
+              Husbands_occupation
+              Standard-of-living_index
+              Media_exposure
+              Contraceptive_method_used
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.06 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         268               45.5008 %
+Incorrectly Classified Instances       321               54.4992 %
+Kappa statistic                          0.1751
+Mean absolute error                      0.3843
+Root mean squared error                  0.4843
+Relative absolute error                 87.5661 %
+Root relative squared error            101.9029 %
+Total Number of Instances              589     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.645    0.373    0.496      0.645    0.561      0.262    0.691     0.615     1
+                 0.434    0.228    0.295      0.434    0.351      0.180    0.671     0.325     2
+                 0.312    0.222    0.542      0.312    0.396      0.102    0.605     0.533     3
+Weighted Avg.    0.455    0.278    0.481      0.455    0.448      0.174    0.648     0.525     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 138  34  42 |   a = 1
+  31  46  29 |   b = 2
+ 109  76  84 |   c = 3
+

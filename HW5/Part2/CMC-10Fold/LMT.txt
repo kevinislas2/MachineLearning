@@ -1,0 +1,242 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     cmc
+Instances:    1473
+Attributes:   10
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Wifes_now_working?
+              Husbands_occupation
+              Standard-of-living_index
+              Media_exposure
+              Contraceptive_method_used
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+
+Number_of_children_ever_born <= 0: LM_1:16/32 (97)
+Number_of_children_ever_born > 0
+|   Wifes_age <= 37: LM_2:16/48 (968)
+|   Wifes_age > 37: LM_3:16/48 (408)
+
+Number of Leaves  : 	3
+
+Size of the Tree : 	5
+
+LM_1:
+Class 1 :
+-2.32 + 
+[Wifes_age] * 0.29 +
+[Wifes_education=1] * 0.6  +
+[Wifes_education=2] * -1 +
+[Wifes_education=3] * -0.19 +
+[Wifes_education=4] * 0.02 +
+[Husbands_education=2] * -3.66 +
+[Number_of_children_ever_born] * -0.2 +
+[Wifes_religion=1] * 1.18 +
+[Wifes_now_working?=1] * 1.26 +
+[Husbands_occupation=2] * 2.75 +
+[Husbands_occupation=4] * -1.66 +
+[Standard-of-living_index=1] * 0.4  +
+[Standard-of-living_index=4] * -0.18 +
+[Media_exposure=1] * 0.32
+
+Class 2 :
+-11.3 + 
+[Wifes_age] * -0.01 +
+[Wifes_education=1] * -0.73 +
+[Wifes_education=2] * -0.27 +
+[Wifes_education=3] * 0.15 +
+[Wifes_education=4] * 0.47 +
+[Husbands_education=1] * 0.72 +
+[Husbands_education=2] * -0 +
+[Number_of_children_ever_born] * 0.09 +
+[Wifes_religion=1] * -0.2 +
+[Husbands_occupation=1] * 0.27 +
+[Husbands_occupation=2] * -0.1 +
+[Husbands_occupation=4] * -0 +
+[Standard-of-living_index=1] * -0.39 +
+[Standard-of-living_index=2] * -0.18
+
+Class 3 :
+4.67 + 
+[Wifes_age] * -0.34 +
+[Wifes_education=1] * 0.37 +
+[Wifes_education=2] * 1.21 +
+[Wifes_education=4] * 0.06 +
+[Husbands_education=1] * -1.39 +
+[Husbands_education=2] * 4.41 +
+[Husbands_education=3] * 0.1  +
+[Number_of_children_ever_born] * 0.11 +
+[Wifes_religion=1] * -1.02 +
+[Wifes_now_working?=1] * -1.2 +
+[Husbands_occupation=2] * -2.77 +
+[Husbands_occupation=3] * 0.18 +
+[Husbands_occupation=4] * 1.33 +
+[Media_exposure=1] * -0.24
+
+
+LM_2:
+Class 1 :
+0.81 + 
+[Wifes_age] * 0    +
+[Wifes_education=1] * 0.6  +
+[Wifes_education=2] * 0.19 +
+[Wifes_education=3] * -0.19 +
+[Wifes_education=4] * -0.61 +
+[Husbands_education=1] * -0.12 +
+[Husbands_education=2] * -0.12 +
+[Number_of_children_ever_born] * -0.23 +
+[Wifes_religion=1] * 0.23 +
+[Wifes_now_working?=1] * -0.07 +
+[Husbands_occupation=1] * 0.07 +
+[Husbands_occupation=3] * -0.03 +
+[Husbands_occupation=4] * -0.66 +
+[Standard-of-living_index=1] * 0.45 +
+[Standard-of-living_index=2] * 0.08 +
+[Standard-of-living_index=4] * -0.23 +
+[Media_exposure=1] * 0.19
+
+Class 2 :
+-0.59 + 
+[Wifes_age] * -0.01 +
+[Wifes_education=1] * -0.73 +
+[Wifes_education=2] * -0.37 +
+[Wifes_education=3] * 0.29 +
+[Wifes_education=4] * 0.65 +
+[Husbands_education=1] * 1.69 +
+[Husbands_education=2] * 0.1  +
+[Husbands_education=3] * -0.05 +
+[Number_of_children_ever_born] * 0.08 +
+[Wifes_religion=1] * -0.15 +
+[Wifes_now_working?=1] * -0.03 +
+[Husbands_occupation=1] * 0.27 +
+[Husbands_occupation=2] * -0.14 +
+[Husbands_occupation=3] * 0.1  +
+[Husbands_occupation=4] * 0.63 +
+[Standard-of-living_index=1] * -0.45 +
+[Standard-of-living_index=2] * -0.25 +
+[Standard-of-living_index=3] * 0.05 +
+[Media_exposure=1] * -0.08
+
+Class 3 :
+1.61 + 
+[Wifes_age] * -0.06 +
+[Wifes_education=1] * 0.78 +
+[Wifes_education=2] * -0.03 +
+[Wifes_education=3] * -0.01 +
+[Wifes_education=4] * 0.11 +
+[Husbands_education=1] * -1.39 +
+[Husbands_education=3] * 0.11 +
+[Number_of_children_ever_born] * 0.12 +
+[Wifes_religion=1] * -0.02 +
+[Wifes_now_working?=1] * 0.22 +
+[Husbands_occupation=1] * -0.16 +
+[Husbands_occupation=2] * 0.02 +
+[Husbands_occupation=3] * 0.21 +
+[Standard-of-living_index=1] * -0 +
+[Standard-of-living_index=2] * -0.02 +
+[Standard-of-living_index=4] * -0.08 +
+[Media_exposure=1] * -0.24
+
+LM_3:
+Class 1 :
+-2.57 + 
+[Wifes_age] * 0.09 +
+[Wifes_education=1] * 0.49 +
+[Wifes_education=2] * 0.06 +
+[Wifes_education=3] * -0.19 +
+[Wifes_education=4] * -1.06 +
+[Husbands_education=1] * 0.5  +
+[Husbands_education=2] * 0.47 +
+[Husbands_education=3] * -0.1 +
+[Number_of_children_ever_born] * -0.17 +
+[Wifes_religion=1] * 0.31 +
+[Wifes_now_working?=1] * 0.28 +
+[Husbands_occupation=3] * -0.03 +
+[Husbands_occupation=4] * 2.29 +
+[Standard-of-living_index=1] * 0.7  +
+[Standard-of-living_index=2] * 0.08 +
+[Standard-of-living_index=4] * -0.23 +
+[Media_exposure=1] * 0.74
+
+Class 2 :
+2.17 + 
+[Wifes_age] * -0.07 +
+[Wifes_education=1] * -0.6 +
+[Wifes_education=2] * -0 +
+[Wifes_education=3] * 0.15 +
+[Wifes_education=4] * 0.65 +
+[Husbands_education=1] * 1.03 +
+[Husbands_education=2] * -0.55 +
+[Husbands_education=3] * -0.05 +
+[Number_of_children_ever_born] * 0.1  +
+[Wifes_religion=1] * -0.4 +
+[Wifes_now_working?=1] * -0.03 +
+[Husbands_occupation=1] * 0.27 +
+[Husbands_occupation=2] * 0.01 +
+[Husbands_occupation=3] * -0.28 +
+[Husbands_occupation=4] * -1.52 +
+[Standard-of-living_index=1] * -0.45 +
+[Standard-of-living_index=2] * -0.21 +
+[Standard-of-living_index=3] * -0.08 +
+[Media_exposure=1] * -0.31
+
+Class 3 :
+2.17 + 
+[Wifes_age] * -0.07 +
+[Wifes_education=1] * 0.48 +
+[Wifes_education=2] * -0.03 +
+[Wifes_education=3] * 0.32 +
+[Wifes_education=4] * 0.53 +
+[Husbands_education=1] * -3.42 +
+[Husbands_education=3] * 0.11 +
+[Number_of_children_ever_born] * 0.03 +
+[Wifes_religion=1] * -0.02 +
+[Wifes_now_working?=1] * -0.31 +
+[Husbands_occupation=1] * -0.1 +
+[Husbands_occupation=2] * 0.02 +
+[Husbands_occupation=3] * 0.21 +
+[Husbands_occupation=4] * -0.79 +
+[Standard-of-living_index=1] * -0.32 +
+[Standard-of-living_index=2] * -0.23 +
+[Standard-of-living_index=4] * 0.12 +
+[Media_exposure=1] * -0.63
+
+
+Time taken to build model: 1.65 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         781               53.021  %
+Incorrectly Classified Instances       692               46.979  %
+Kappa statistic                          0.27  
+Mean absolute error                      0.3621
+Root mean squared error                  0.431 
+Relative absolute error                 84.047  %
+Root relative squared error             92.8696 %
+Total Number of Instances             1473     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.601    0.252    0.640      0.601    0.620      0.352    0.731     0.727     1
+                 0.351    0.139    0.425      0.351    0.385      0.228    0.735     0.409     2
+                 0.560    0.334    0.471      0.560    0.512      0.219    0.686     0.492     3
+Weighted Avg.    0.530    0.255    0.533      0.530    0.529      0.278    0.716     0.574     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 378  66 185 |   a = 1
+  80 117 136 |   b = 2
+ 133  92 286 |   c = 3
+

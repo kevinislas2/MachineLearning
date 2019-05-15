@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     postoperative-patient-data-weka.filters.unsupervised.attribute.Remove-R3,5,8
+Instances:    54
+Attributes:   6
+              L-CORE
+              L-SURF
+              L-BP
+              CORE-STBL
+              BP-STBL
+              decision
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes     	    Incoming attributes
+---------------------	    ----------------
+(nominal) L-CORE     	--> 1 (nominal) L-CORE
+(nominal) L-SURF     	--> 2 (nominal) L-SURF
+(nominal) L-BP       	--> 4 (nominal) L-BP
+(nominal) CORE-STBL  	--> 6 (nominal) CORE-STBL
+(nominal) BP-STBL    	--> 7 (nominal) BP-STBL
+(nominal) decision   	--> 9 (nominal) decision
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          25               69.4444 %
+Incorrectly Classified Instances        11               30.5556 %
+Kappa statistic                         -0.0076
+Mean absolute error                      0.2547
+Root mean squared error                  0.3838
+Relative absolute error                 88.2974 %
+Root relative squared error            106.7378 %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.857    0.875    0.774      0.857    0.814      -0.021   0.531     0.806     A
+                 0.000    0.000    ?          0.000    ?          ?        0.371     0.028     I
+                 0.143    0.138    0.200      0.143    0.167      0.006    0.525     0.259     S
+Weighted Avg.    0.694    0.707    ?          0.694    ?          ?        0.526     0.678     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 24  0  4 |  a = A
+  1  0  0 |  b = I
+  6  0  1 |  c = S
+

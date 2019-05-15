@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     adult-weka.filters.unsupervised.attribute.Remove-R1-4,7,9-10,13-14
+Instances:    29307
+Attributes:   6
+              education-num
+              marital-status
+              relationship
+              capital-gain
+              capital-loss
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(numeric) education-num   	--> 5 (numeric) education-num
+(nominal) marital-status  	--> 6 (nominal) marital-status
+(nominal) relationship    	--> 8 (nominal) relationship
+(numeric) capital-gain    	--> 11 (numeric) capital-gain
+(numeric) capital-loss    	--> 12 (numeric) capital-loss
+(nominal) class           	--> 15 (nominal) class
+
+
+Time taken to build model: 4.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 46.13 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       16785               85.9227 %
+Incorrectly Classified Instances      2750               14.0773 %
+Kappa statistic                          0.5797
+Mean absolute error                      0.1972
+Root mean squared error                  0.315 
+Relative absolute error                 54.0903 %
+Root relative squared error             73.5506 %
+Total Number of Instances            19535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.581    0.052    0.781      0.581    0.667      0.590    0.904     0.771     >50K
+                 0.948    0.419    0.876      0.948    0.911      0.590    0.904     0.961     <=50K
+Weighted Avg.    0.859    0.330    0.853      0.859    0.852      0.590    0.904     0.915     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2748  1979 |     a = >50K
+   771 14037 |     b = <=50K
+

@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.LMT -- -I -1 -M 15 -W 0.0
+Relation:     cmc-weka.filters.unsupervised.attribute.Remove-R6-7,9-weka.filters.unsupervised.attribute.Remove-R6
+Instances:    884
+Attributes:   6
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Contraceptive_method_used
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Logistic model tree 
+------------------
+: LM_1:4/4 (884)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 1 :
+1.14 + 
+[Wifes_education=1] * 0.65 +
+[Wifes_education=3] * -0.29 +
+[Wifes_education=4] * -0.71 +
+[Number_of_children_ever_born] * -0.13
+
+Class 2 :
+-0.85 + 
+[Wifes_education=1] * -0.69 +
+[Wifes_education=2] * -0.27 +
+[Wifes_education=4] * 0.79 +
+[Number_of_children_ever_born] * 0.1 
+
+Class 3 :
+0.99 + 
+[Wifes_age] * -0.05 +
+[Number_of_children_ever_born] * 0.06 +
+[Wifes_religion=1] * 0.55
+
+Attribute mappings:
+
+Model attributes                        	    Incoming attributes
+----------------------------------------	    ----------------
+(numeric) Wifes_age                     	--> 1 (numeric) Wifes_age
+(nominal) Wifes_education               	--> 2 (nominal) Wifes_education
+(nominal) Husbands_education            	--> 3 (nominal) Husbands_education
+(numeric) Number_of_children_ever_born  	--> 4 (numeric) Number_of_children_ever_born
+(nominal) Wifes_religion                	--> 5 (nominal) Wifes_religion
+(nominal) Contraceptive_method_used     	--> 10 (nominal) Contraceptive_method_used
+
+
+Time taken to build model: 0.26 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.92 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         252               42.7844 %
+Incorrectly Classified Instances       337               57.2156 %
+Kappa statistic                          0.1404
+Mean absolute error                      0.4114
+Root mean squared error                  0.4646
+Relative absolute error                 93.7467 %
+Root relative squared error             97.7729 %
+Total Number of Instances              589     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.804    0.611    0.429      0.804    0.559      0.199    0.653     0.533     1
+                 0.406    0.170    0.344      0.406    0.372      0.222    0.674     0.299     2
+                 0.138    0.081    0.587      0.138    0.223      0.091    0.601     0.554     3
+Weighted Avg.    0.428    0.290    0.486      0.428    0.372      0.154    0.633     0.501     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 172  26  16 |   a = 1
+  53  43  10 |   b = 2
+ 176  56  37 |   c = 3
+

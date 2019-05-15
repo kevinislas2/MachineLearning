@@ -1,0 +1,122 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.05 -M 2
+Relation:     adult
+Instances:    29307
+Attributes:   15
+              age
+              workclass
+              fnlwgt
+              education
+              education-num
+              marital-status
+              occupation
+              relationship
+              race
+              sex
+              capital-gain
+              capital-loss
+              hours-per-week
+              native-country
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+capital-gain <= 6849
+|   marital-status = Married-civ-spouse
+|   |   capital-loss <= 1844
+|   |   |   education-num <= 11
+|   |   |   |   capital-gain <= 5060: <=50K (8271.0/2292.0)
+|   |   |   |   capital-gain > 5060
+|   |   |   |   |   capital-gain <= 6612: >50K (63.0)
+|   |   |   |   |   capital-gain > 6612: <=50K (3.0)
+|   |   |   education-num > 11
+|   |   |   |   hours-per-week <= 30
+|   |   |   |   |   sex = Female: >50K (110.0/42.0)
+|   |   |   |   |   sex = Male: <=50K (236.0/68.0)
+|   |   |   |   hours-per-week > 30
+|   |   |   |   |   age <= 33
+|   |   |   |   |   |   age <= 25: <=50K (70.0/16.0)
+|   |   |   |   |   |   age > 25
+|   |   |   |   |   |   |   occupation = Tech-support: <=50K (25.17/10.09)
+|   |   |   |   |   |   |   occupation = Craft-repair: <=50K (45.31/14.15)
+|   |   |   |   |   |   |   occupation = Other-service: <=50K (16.11/1.05)
+|   |   |   |   |   |   |   occupation = Sales: >50K (84.57/39.29)
+|   |   |   |   |   |   |   occupation = Exec-managerial: >50K (127.87/42.43)
+|   |   |   |   |   |   |   occupation = Prof-specialty: >50K (202.37/96.69)
+|   |   |   |   |   |   |   occupation = Handlers-cleaners: <=50K (9.06/2.03)
+|   |   |   |   |   |   |   occupation = Machine-op-inspct: <=50K (6.04/0.02)
+|   |   |   |   |   |   |   occupation = Adm-clerical
+|   |   |   |   |   |   |   |   age <= 29: <=50K (11.12/2.06)
+|   |   |   |   |   |   |   |   age > 29
+|   |   |   |   |   |   |   |   |   hours-per-week <= 52: >50K (21.06/7.06)
+|   |   |   |   |   |   |   |   |   hours-per-week > 52: <=50K (4.06/1.06)
+|   |   |   |   |   |   |   occupation = Farming-fishing: <=50K (10.07/1.03)
+|   |   |   |   |   |   |   occupation = Transport-moving: <=50K (7.05/2.02)
+|   |   |   |   |   |   |   occupation = Priv-house-serv: <=50K (0.0)
+|   |   |   |   |   |   |   occupation = Protective-serv
+|   |   |   |   |   |   |   |   race = White: >50K (15.07/6.0)
+|   |   |   |   |   |   |   |   race = Asian-Pac-Islander: >50K (1.03/0.03)
+|   |   |   |   |   |   |   |   race = Amer-Indian-Eskimo: <=50K (0.03)
+|   |   |   |   |   |   |   |   race = Other: >50K (0.0)
+|   |   |   |   |   |   |   |   race = Black: <=50K (4.0)
+|   |   |   |   |   |   |   occupation = Armed-Forces: <=50K (0.0)
+|   |   |   |   |   age > 33: >50K (2422.0/764.0)
+|   |   capital-loss > 1844
+|   |   |   capital-loss <= 1980: >50K (514.0/9.0)
+|   |   |   capital-loss > 1980
+|   |   |   |   capital-loss <= 2163: <=50K (68.0)
+|   |   |   |   capital-loss > 2163
+|   |   |   |   |   education-num <= 12: <=50K (38.0/16.0)
+|   |   |   |   |   education-num > 12: >50K (46.0/3.0)
+|   marital-status = Divorced: <=50K (3880.0/285.0)
+|   marital-status = Never-married: <=50K (9587.0/322.0)
+|   marital-status = Separated: <=50K (916.0/49.0)
+|   marital-status = Widowed
+|   |   capital-loss <= 1816: <=50K (862.0/43.0)
+|   |   capital-loss > 1816
+|   |   |   capital-loss <= 2206: <=50K (9.0)
+|   |   |   capital-loss > 2206: >50K (16.0/4.0)
+|   marital-status = Married-spouse-absent: <=50K (370.0/26.0)
+|   marital-status = Married-AF-spouse: <=50K (22.0/5.0)
+capital-gain > 6849: >50K (1214.0/19.0)
+
+Number of Leaves  : 	40
+
+Size of the tree : 	59
+
+
+Time taken to build model: 1.39 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       25118               85.7065 %
+Incorrectly Classified Instances      4189               14.2935 %
+Kappa statistic                          0.559 
+Mean absolute error                      0.2137
+Root mean squared error                  0.3269
+Relative absolute error                 58.9972 %
+Root relative squared error             76.8092 %
+Total Number of Instances            29307     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.546    0.046    0.787      0.546    0.645      0.574    0.866     0.687     >50K
+                 0.954    0.454    0.871      0.954    0.911      0.574    0.866     0.932     <=50K
+Weighted Avg.    0.857    0.357    0.851      0.857    0.847      0.574    0.866     0.874     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3803  3157 |     a = >50K
+  1032 21315 |     b = <=50K
+

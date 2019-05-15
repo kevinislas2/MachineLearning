@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     postoperative-patient-data
+Instances:    54
+Attributes:   9
+              L-CORE
+              L-SURF
+              L-O2
+              L-BP
+              SURF-STBL
+              CORE-STBL
+              BP-STBL
+              COMFORT
+              decision
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          51               94.4444 %
+Incorrectly Classified Instances         3                5.5556 %
+Kappa statistic                          0.8727
+Mean absolute error                      0.1363
+Root mean squared error                  0.2028
+Relative absolute error                 43.7592 %
+Root relative squared error             51.9786 %
+Total Number of Instances               54     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.167    0.923      1.000    0.960      0.877    0.992     0.995     A
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     I
+                 0.824    0.000    1.000      0.824    0.903      0.873    0.992     0.979     S
+Weighted Avg.    0.944    0.111    0.949      0.944    0.943      0.878    0.992     0.990     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 36  0  0 |  a = A
+  0  1  0 |  b = I
+  3  0 14 |  c = S
+

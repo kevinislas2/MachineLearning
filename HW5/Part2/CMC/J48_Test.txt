@@ -1,0 +1,213 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     cmc
+Instances:    884
+Attributes:   10
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Wifes_now_working?
+              Husbands_occupation
+              Standard-of-living_index
+              Media_exposure
+              Contraceptive_method_used
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Number_of_children_ever_born <= 0: 1 (62.0)
+Number_of_children_ever_born > 0
+|   Wifes_education = 1
+|   |   Wifes_age <= 36
+|   |   |   Wifes_now_working? = 0
+|   |   |   |   Media_exposure = 0
+|   |   |   |   |   Number_of_children_ever_born <= 2: 1 (2.0)
+|   |   |   |   |   Number_of_children_ever_born > 2: 3 (2.0)
+|   |   |   |   Media_exposure = 1: 2 (3.0/1.0)
+|   |   |   Wifes_now_working? = 1: 3 (24.0/10.0)
+|   |   Wifes_age > 36: 1 (52.0/4.0)
+|   Wifes_education = 2
+|   |   Wifes_age <= 38
+|   |   |   Number_of_children_ever_born <= 5
+|   |   |   |   Husbands_education = 1: 2 (1.0)
+|   |   |   |   Husbands_education = 2
+|   |   |   |   |   Number_of_children_ever_born <= 3: 1 (25.0/8.0)
+|   |   |   |   |   Number_of_children_ever_born > 3: 3 (7.0/1.0)
+|   |   |   |   Husbands_education = 3: 1 (59.0/22.0)
+|   |   |   |   Husbands_education = 4
+|   |   |   |   |   Number_of_children_ever_born <= 2: 1 (23.0/8.0)
+|   |   |   |   |   Number_of_children_ever_born > 2
+|   |   |   |   |   |   Number_of_children_ever_born <= 3: 3 (14.0/4.0)
+|   |   |   |   |   |   Number_of_children_ever_born > 3: 1 (14.0/4.0)
+|   |   |   Number_of_children_ever_born > 5
+|   |   |   |   Standard-of-living_index = 1: 3 (4.0/1.0)
+|   |   |   |   Standard-of-living_index = 2: 1 (4.0/1.0)
+|   |   |   |   Standard-of-living_index = 3: 3 (7.0/2.0)
+|   |   |   |   Standard-of-living_index = 4: 2 (4.0)
+|   |   Wifes_age > 38: 1 (29.0/6.0)
+|   Wifes_education = 3
+|   |   Wifes_religion = 0
+|   |   |   Standard-of-living_index = 1: 3 (1.0)
+|   |   |   Standard-of-living_index = 2: 2 (0.0)
+|   |   |   Standard-of-living_index = 3: 2 (4.0/1.0)
+|   |   |   Standard-of-living_index = 4
+|   |   |   |   Wifes_now_working? = 0: 2 (3.0)
+|   |   |   |   Wifes_now_working? = 1: 1 (10.0/3.0)
+|   |   Wifes_religion = 1
+|   |   |   Wifes_age <= 35
+|   |   |   |   Wifes_now_working? = 0
+|   |   |   |   |   Husbands_occupation = 1: 3 (4.0/2.0)
+|   |   |   |   |   Husbands_occupation = 2: 1 (11.0/2.0)
+|   |   |   |   |   Husbands_occupation = 3
+|   |   |   |   |   |   Standard-of-living_index = 1: 2 (0.0)
+|   |   |   |   |   |   Standard-of-living_index = 2: 1 (4.0/2.0)
+|   |   |   |   |   |   Standard-of-living_index = 3: 2 (3.0/1.0)
+|   |   |   |   |   |   Standard-of-living_index = 4: 2 (4.0/1.0)
+|   |   |   |   |   Husbands_occupation = 4: 1 (1.0)
+|   |   |   |   Wifes_now_working? = 1
+|   |   |   |   |   Number_of_children_ever_born <= 2
+|   |   |   |   |   |   Standard-of-living_index = 1
+|   |   |   |   |   |   |   Husbands_occupation = 1: 1 (0.0)
+|   |   |   |   |   |   |   Husbands_occupation = 2: 3 (5.0/1.0)
+|   |   |   |   |   |   |   Husbands_occupation = 3: 1 (4.0/1.0)
+|   |   |   |   |   |   |   Husbands_occupation = 4: 1 (0.0)
+|   |   |   |   |   |   Standard-of-living_index = 2
+|   |   |   |   |   |   |   Number_of_children_ever_born <= 1: 3 (5.0/2.0)
+|   |   |   |   |   |   |   Number_of_children_ever_born > 1: 1 (7.0/2.0)
+|   |   |   |   |   |   Standard-of-living_index = 3
+|   |   |   |   |   |   |   Husbands_occupation = 1: 3 (2.0)
+|   |   |   |   |   |   |   Husbands_occupation = 2
+|   |   |   |   |   |   |   |   Wifes_age <= 22: 1 (4.0)
+|   |   |   |   |   |   |   |   Wifes_age > 22: 3 (3.0/1.0)
+|   |   |   |   |   |   |   Husbands_occupation = 3: 3 (12.0/4.0)
+|   |   |   |   |   |   |   Husbands_occupation = 4: 3 (0.0)
+|   |   |   |   |   |   Standard-of-living_index = 4
+|   |   |   |   |   |   |   Husbands_education = 1: 1 (0.0)
+|   |   |   |   |   |   |   Husbands_education = 2: 1 (0.0)
+|   |   |   |   |   |   |   Husbands_education = 3: 1 (4.0/1.0)
+|   |   |   |   |   |   |   Husbands_education = 4
+|   |   |   |   |   |   |   |   Wifes_age <= 22: 2 (3.0)
+|   |   |   |   |   |   |   |   Wifes_age > 22: 1 (6.0/3.0)
+|   |   |   |   |   Number_of_children_ever_born > 2
+|   |   |   |   |   |   Husbands_education = 1: 2 (1.0)
+|   |   |   |   |   |   Husbands_education = 2: 1 (3.0/1.0)
+|   |   |   |   |   |   Husbands_education = 3
+|   |   |   |   |   |   |   Wifes_age <= 32
+|   |   |   |   |   |   |   |   Wifes_age <= 25
+|   |   |   |   |   |   |   |   |   Number_of_children_ever_born <= 3: 3 (4.0)
+|   |   |   |   |   |   |   |   |   Number_of_children_ever_born > 3: 1 (2.0)
+|   |   |   |   |   |   |   |   Wifes_age > 25: 3 (13.0/1.0)
+|   |   |   |   |   |   |   Wifes_age > 32: 2 (7.0/2.0)
+|   |   |   |   |   |   Husbands_education = 4: 3 (27.0/11.0)
+|   |   |   Wifes_age > 35
+|   |   |   |   Wifes_now_working? = 0
+|   |   |   |   |   Standard-of-living_index = 1: 1 (0.0)
+|   |   |   |   |   Standard-of-living_index = 2: 1 (2.0)
+|   |   |   |   |   Standard-of-living_index = 3
+|   |   |   |   |   |   Number_of_children_ever_born <= 4: 1 (2.0)
+|   |   |   |   |   |   Number_of_children_ever_born > 4: 2 (3.0/1.0)
+|   |   |   |   |   Standard-of-living_index = 4
+|   |   |   |   |   |   Husbands_education = 1: 3 (0.0)
+|   |   |   |   |   |   Husbands_education = 2: 3 (0.0)
+|   |   |   |   |   |   Husbands_education = 3: 1 (2.0)
+|   |   |   |   |   |   Husbands_education = 4: 3 (5.0/1.0)
+|   |   |   |   Wifes_now_working? = 1: 1 (51.0/17.0)
+|   Wifes_education = 4
+|   |   Number_of_children_ever_born <= 2
+|   |   |   Husbands_education = 1: 1 (0.0)
+|   |   |   Husbands_education = 2: 2 (1.0)
+|   |   |   Husbands_education = 3: 3 (4.0)
+|   |   |   Husbands_education = 4
+|   |   |   |   Wifes_age <= 32
+|   |   |   |   |   Wifes_now_working? = 0
+|   |   |   |   |   |   Husbands_occupation = 1: 2 (18.0/6.0)
+|   |   |   |   |   |   Husbands_occupation = 2
+|   |   |   |   |   |   |   Wifes_age <= 26: 3 (3.0/1.0)
+|   |   |   |   |   |   |   Wifes_age > 26: 2 (3.0/1.0)
+|   |   |   |   |   |   Husbands_occupation = 3: 1 (3.0/1.0)
+|   |   |   |   |   |   Husbands_occupation = 4: 2 (0.0)
+|   |   |   |   |   Wifes_now_working? = 1
+|   |   |   |   |   |   Number_of_children_ever_born <= 1
+|   |   |   |   |   |   |   Wifes_age <= 25: 2 (31.0/18.0)
+|   |   |   |   |   |   |   Wifes_age > 25: 1 (18.0/8.0)
+|   |   |   |   |   |   Number_of_children_ever_born > 1
+|   |   |   |   |   |   |   Wifes_age <= 28: 3 (15.0/8.0)
+|   |   |   |   |   |   |   Wifes_age > 28: 1 (9.0/4.0)
+|   |   |   |   Wifes_age > 32: 1 (43.0/16.0)
+|   |   Number_of_children_ever_born > 2
+|   |   |   Wifes_religion = 0: 2 (44.0/12.0)
+|   |   |   Wifes_religion = 1
+|   |   |   |   Standard-of-living_index = 1: 1 (1.0)
+|   |   |   |   Standard-of-living_index = 2
+|   |   |   |   |   Number_of_children_ever_born <= 5: 3 (3.0/1.0)
+|   |   |   |   |   Number_of_children_ever_born > 5: 1 (2.0/1.0)
+|   |   |   |   Standard-of-living_index = 3: 2 (26.0/11.0)
+|   |   |   |   Standard-of-living_index = 4
+|   |   |   |   |   Husbands_education = 1: 2 (0.0)
+|   |   |   |   |   Husbands_education = 2: 2 (0.0)
+|   |   |   |   |   Husbands_education = 3
+|   |   |   |   |   |   Number_of_children_ever_born <= 4: 3 (2.0)
+|   |   |   |   |   |   Number_of_children_ever_born > 4: 2 (6.0/1.0)
+|   |   |   |   |   Husbands_education = 4
+|   |   |   |   |   |   Wifes_age <= 46
+|   |   |   |   |   |   |   Number_of_children_ever_born <= 7
+|   |   |   |   |   |   |   |   Husbands_occupation = 1
+|   |   |   |   |   |   |   |   |   Wifes_age <= 35: 3 (17.0/7.0)
+|   |   |   |   |   |   |   |   |   Wifes_age > 35: 2 (40.0/12.0)
+|   |   |   |   |   |   |   |   Husbands_occupation = 2
+|   |   |   |   |   |   |   |   |   Wifes_now_working? = 0: 1 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   Wifes_now_working? = 1
+|   |   |   |   |   |   |   |   |   |   Number_of_children_ever_born <= 3: 3 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_children_ever_born > 3: 2 (8.0/3.0)
+|   |   |   |   |   |   |   |   Husbands_occupation = 3
+|   |   |   |   |   |   |   |   |   Wifes_age <= 29: 3 (3.0)
+|   |   |   |   |   |   |   |   |   Wifes_age > 29: 2 (7.0/3.0)
+|   |   |   |   |   |   |   |   Husbands_occupation = 4: 2 (0.0)
+|   |   |   |   |   |   |   Number_of_children_ever_born > 7: 3 (3.0)
+|   |   |   |   |   |   Wifes_age > 46
+|   |   |   |   |   |   |   Number_of_children_ever_born <= 5: 1 (6.0/1.0)
+|   |   |   |   |   |   |   Number_of_children_ever_born > 5: 2 (4.0/1.0)
+
+Number of Leaves  : 	95
+
+Size of the tree : 	153
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         271               46.0102 %
+Incorrectly Classified Instances       318               53.9898 %
+Kappa statistic                          0.1828
+Mean absolute error                      0.3865
+Root mean squared error                  0.5021
+Relative absolute error                 88.0872 %
+Root relative squared error            105.6607 %
+Total Number of Instances              589     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.598    0.352    0.492      0.598    0.540      0.238    0.659     0.577     1
+                 0.481    0.230    0.315      0.481    0.381      0.216    0.641     0.257     2
+                 0.342    0.234    0.551      0.342    0.422      0.119    0.576     0.510     3
+Weighted Avg.    0.460    0.276    0.487      0.460    0.457      0.180    0.618     0.489     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 128  37  49 |   a = 1
+  29  51  26 |   b = 2
+ 103  74  92 |   c = 3
+

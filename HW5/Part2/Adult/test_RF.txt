@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     adult
+Instances:    29307
+Attributes:   15
+              age
+              workclass
+              fnlwgt
+              education
+              education-num
+              marital-status
+              occupation
+              relationship
+              race
+              sex
+              capital-gain
+              capital-loss
+              hours-per-week
+              native-country
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 9.91 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 3.99 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       16620               85.0781 %
+Incorrectly Classified Instances      2915               14.9219 %
+Kappa statistic                          0.5629
+Mean absolute error                      0.1957
+Root mean squared error                  0.324 
+Relative absolute error                 53.6922 %
+Root relative squared error             75.6371 %
+Total Number of Instances            19535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.590    0.066    0.741      0.590    0.657      0.569    0.899     0.761     >50K
+                 0.934    0.410    0.877      0.934    0.905      0.569    0.899     0.963     <=50K
+Weighted Avg.    0.851    0.327    0.844      0.851    0.845      0.569    0.899     0.914     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2788  1939 |     a = >50K
+   976 13832 |     b = <=50K
+

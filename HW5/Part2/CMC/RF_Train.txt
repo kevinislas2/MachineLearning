@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     cmc
+Instances:    884
+Attributes:   10
+              Wifes_age
+              Wifes_education
+              Husbands_education
+              Number_of_children_ever_born
+              Wifes_religion
+              Wifes_now_working?
+              Husbands_occupation
+              Standard-of-living_index
+              Media_exposure
+              Contraceptive_method_used
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.17 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.05 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         865               97.8507 %
+Incorrectly Classified Instances        19                2.1493 %
+Kappa statistic                          0.9664
+Mean absolute error                      0.1342
+Root mean squared error                  0.1795
+Relative absolute error                 31.4999 %
+Root relative squared error             38.9106 %
+Total Number of Instances              884     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.988    0.009    0.990      0.988    0.989      0.980    1.000     1.000     1
+                 0.969    0.009    0.973      0.969    0.971      0.961    0.999     0.998     2
+                 0.971    0.014    0.963      0.971    0.967      0.955    0.999     0.997     3
+Weighted Avg.    0.979    0.010    0.979      0.979    0.979      0.968    0.999     0.998     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 410   1   4 |   a = 1
+   2 220   5 |   b = 2
+   2   5 235 |   c = 3
+
